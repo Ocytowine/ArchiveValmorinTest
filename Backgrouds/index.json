@@ -1,0 +1,17 @@
+[
+  {
+    "file": "erudit.json",
+    "id": "erudit",
+    "name": "erudit"
+  },
+  {
+    "file": "soldat.json",
+    "id": "soldat",
+    "name": "soldat"
+  },
+  {
+    "file": "voleur_des_rues.json",
+    "id": "voleur_des_rues",
+    "name": "voleur_des_rues"
+  }
+]
