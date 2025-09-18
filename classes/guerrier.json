@@ -42,7 +42,7 @@
       "assaut"
     ]
   },
-  "sous_classes": [
+  "subclasses": [
     "champion",
     "berserker"
   ]
