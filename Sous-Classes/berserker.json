@@ -1,0 +1,13 @@
+{
+  "id": "berserker",
+  "nom": "Berserker",
+  "classe_id": "guerrier",
+  "capacites_par_niveau": {
+    "3": [
+      "berserker_rage"
+    ],
+    "6": [
+      "frappe_furieuse"
+    ]
+  }
+}

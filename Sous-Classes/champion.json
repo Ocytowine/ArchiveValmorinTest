@@ -1,0 +1,13 @@
+{
+  "id": "champion",
+  "nom": "Champion",
+  "classe_id": "guerrier",
+  "capacites_par_niveau": {
+    "3": [
+      "critique_ameliore"
+    ],
+    "7": [
+      "athlete_remarquable"
+    ]
+  }
+}
