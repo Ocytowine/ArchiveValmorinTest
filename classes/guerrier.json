@@ -21,12 +21,18 @@
   },
   "features_by_level": {
     "1": [
-      "Style-de-combat",
-      "Second-souffle"
+      {
+        "id": "style-de-combat",
+        "name": "Style de combat"
+      },
+      {
+        "id": "seconde-souffle",
+        "name": "Second souffle"
+      }
     ],
     "2": [
       {
-      "id": "Assaut"
+        "id": "assaut",
         "name": "Assaut"
       }
     ],
