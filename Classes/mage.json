@@ -1,0 +1,42 @@
+{
+  "id": "mage",
+  "nom": "Mage",
+  "des_de_vie": 6,
+  "capacites_principales": [
+    "intelligence",
+    "sagesse"
+  ],
+  "jets_de_sauvegarde": [
+    "intelligence",
+    "sagesse"
+  ],
+  "maitrises": {
+    "armes": [
+      "simples"
+    ],
+    "armures": [],
+    "outils": []
+  },
+  "choix_competences": {
+    "choisir": 2,
+    "parmi": [
+      "arcanes",
+      "histoire",
+      "investigation",
+      "religion",
+      "medecine"
+    ]
+  },
+  "capacites_par_niveau": {
+    "1": [
+      "lancer_de_sort"
+    ],
+    "2": [
+      "arcane_shield"
+    ]
+  },
+  "sous_classes": [
+    "enchanter",
+    "evocateur"
+  ]
+}
