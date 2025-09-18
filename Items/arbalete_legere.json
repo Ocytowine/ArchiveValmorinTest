@@ -1,0 +1,21 @@
+{
+  "id": "arbalete_legere",
+  "nom": "Arbalète légère",
+  "categorie": "arme",
+  "arme": {
+    "maitrise_requise": "simple",
+    "mains": "2m",
+    "dommage": "1d8 perforant",
+    "propriete": [
+      "chargement",
+      "distance",
+      "deux_mains"
+    ]
+  },
+  "poids": "3.0 kg",
+  "cout": "25 po",
+  "tags": [
+    "arme",
+    "distance"
+  ]
+}

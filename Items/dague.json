@@ -1,0 +1,20 @@
+{
+  "id": "dague",
+  "nom": "Dague",
+  "categorie": "arme",
+  "arme": {
+    "maitrise_requise": "simple",
+    "mains": "1m",
+    "dommage": "1d4 perforant",
+    "propriete": [
+      "jetable",
+      "finesse"
+    ]
+  },
+  "poids": "0.2 kg",
+  "cout": "2 po",
+  "tags": [
+    "arme",
+    "leger"
+  ]
+}
