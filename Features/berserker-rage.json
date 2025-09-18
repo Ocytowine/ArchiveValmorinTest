@@ -1,0 +1,82 @@
+{
+  "id": "berserker-rage",
+  "short_name": "Rage (Berserker)",
+  "nom": "Rage berserk",
+  "type": "class_feature",
+  "canonical": true,
+  "version": "1.0",
+  "applique_a": {
+    "classes": [
+      "guerrier"
+    ],
+    "sous_classes": [
+      "berserker"
+    ],
+    "races": [],
+    "backgrounds": [],
+    "items": []
+  },
+  "niveau_acquisition": 3,
+  "prerequis": [
+    {
+      "type": "sous_classe",
+      "valeur": "berserker"
+    }
+  ],
+  "mecanique": {
+    "action_type": "bonus_action",
+    "activation": "action_bonus",
+    "triggers": [],
+    "duree": "n_rounds",
+    "concentration_required": false,
+    "utilisations": {
+      "nb": 1,
+      "par": "repos_long",
+      "recharge": "long_rest",
+      "resource_pool_id": null
+    },
+    "effects": [
+      {
+        "categorie": "buff",
+        "resume": "Gain d'un bonus de dégâts et résistance partielle aux dégâts pendant n rounds.",
+        "conditions": [],
+        "notes": "Ex: +2 aux dégâts de mêlée, résistance aux dégâts contondants/tranchants/perforants pour 1 minute."
+      }
+    ],
+    "balises": [
+      "rage",
+      "berserker",
+      "buff"
+    ],
+    "links": {
+      "grants_feature_ids": [],
+      "requires_feature_ids": [],
+      "replaces_feature_ids": []
+    }
+  },
+  "texte": "En tant que Berserker, vous pouvez entrer en rage une fois par repos long : vous gagnez +2 aux dégâts de mêlée et résistance aux dégâts physiques pendant 1 minute.",
+  "summary": "Rage : +dégâts et résistances (1/min) — recharge repos long.",
+  "examples": [
+    "Utilisation: Bonus action -> Rage active."
+  ],
+  "i18n": {
+    "fr": {
+      "nom": "Rage berserk",
+      "texte": "En tant que Berserker...",
+      "summary": "Rage : +dégâts et résistances (1/min)."
+    }
+  },
+  "metadata": {
+    "author": "auto",
+    "created_at": "2025-09-17",
+    "updated_at": "2025-09-17",
+    "visibility": "homebrew"
+  },
+  "ui": {
+    "icon_id": "icon_rage",
+    "order_hint": 210,
+    "display_rules": {
+      "collapsed_by_default": false
+    }
+  }
+}

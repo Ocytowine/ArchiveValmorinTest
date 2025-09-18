@@ -1,0 +1,83 @@
+{
+  "id": "maitrise-des-affectations",
+  "short_name": "Maîtrise des affectations",
+  "nom": "Maîtrise des affectations",
+  "type": "class_feature",
+  "canonical": true,
+  "version": "1.0",
+  "applique_a": {
+    "classes": [
+      "mage"
+    ],
+    "sous_classes": [
+      "enchanter"
+    ],
+    "races": [],
+    "backgrounds": [],
+    "items": []
+  },
+  "niveau_acquisition": 6,
+  "prerequis": [
+    {
+      "type": "sous_classe",
+      "valeur": "enchanter"
+    },
+    {
+      "type": "niveau_classe",
+      "classe": "mage",
+      "min": 6
+    }
+  ],
+  "mecanique": {
+    "action_type": "action",
+    "activation": "action",
+    "triggers": [],
+    "duree": "concentration",
+    "concentration_required": true,
+    "utilisations": {
+      "nb": null,
+      "par": "illimite",
+      "recharge": null,
+      "resource_pool_id": null
+    },
+    "effects": [
+      {
+        "categorie": "controle",
+        "resume": "Capacité avancée pour manipuler plusieurs cibles charmées ou inverser effets d'enchantement.",
+        "conditions": [],
+        "notes": "Règle maison : transférer un effet de charme d'une cible à une autre pendant la concentration."
+      }
+    ],
+    "balises": [
+      "enchantement",
+      "controle"
+    ],
+    "links": {
+      "grants_feature_ids": [],
+      "requires_feature_ids": [],
+      "replaces_feature_ids": []
+    }
+  },
+  "texte": "Au niveau 6, vous pouvez manipuler plus finement les effets d'enchantement : ex. transférer ou renforcer l'effet sur d'autres cibles pendant la concentration.",
+  "summary": "Contrôle avancé des effets d'enchantement.",
+  "i18n": {
+    "fr": {
+      "nom": "Maîtrise des affectations",
+      "texte": "Au niveau 6...",
+      "summary": "Contrôle avancé des enchantements."
+    }
+  },
+  "metadata": {
+    "author": "auto",
+    "created_at": "2025-09-17",
+    "updated_at": "2025-09-17",
+    "visibility": "homebrew"
+  },
+  "ui": {
+    "icon_id": "icon_enchant_master",
+    "order_hint": 350,
+    "display_rules": {
+      "collapsed_by_default": false
+    }
+  }
+}

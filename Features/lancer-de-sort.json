@@ -1,0 +1,102 @@
+{
+  "id": "lancer-de-sort",
+  "short_name": "Lancer de sort",
+  "nom": "Lancer de sort",
+  "type": "class_feature",
+  "canonical": true,
+  "version": "1.0",
+  "applique_a": {
+    "classes": [
+      "mage"
+    ],
+    "sous_classes": [],
+    "races": [],
+    "backgrounds": [],
+    "items": []
+  },
+  "niveau_acquisition": 1,
+  "prerequis": [
+    {
+      "type": "classe",
+      "valeur": "mage"
+    }
+  ],
+  "mecanique": {
+    "action_type": "action",
+    "activation": "action",
+    "triggers": [],
+    "duree": "varie",
+    "concentration_required": null,
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "materials_required": []
+    },
+    "utilisations": {
+      "nb": null,
+      "par": "illimite",
+      "recharge": null,
+      "resource_pool_id": "spell_slots"
+    },
+    "resource_pools": [
+      {
+        "id": "spell_slots",
+        "name": "Emplacements de sorts",
+        "max": null,
+        "recharge": "long_rest"
+      }
+    ],
+    "jets": {
+      "attaque": "sort",
+      "caracteristique": "INT",
+      "dd_sauvegarde": null,
+      "sauvegarde_carac": "INT",
+      "avantage": null,
+      "desavantage": null
+    },
+    "effects": [
+      {
+        "categorie": "detection | utilitaire | offense",
+        "resume": "Permet de lancer des sorts connus en consommant des emplacements.",
+        "conditions": [],
+        "notes": "Gérer emplacements et listes de sorts séparément."
+      }
+    ],
+    "balises": [
+      "sorts",
+      "mage",
+      "arcane"
+    ],
+    "links": {
+      "grants_feature_ids": [],
+      "requires_feature_ids": [],
+      "replaces_feature_ids": []
+    }
+  },
+  "texte": "Vous savez lancer des sorts et utilisez des emplacements de sorts pour les activer. La caractéristique de lancement est Intelligence.",
+  "summary": "Permet de lancer des sorts (carac INT).",
+  "examples": [
+    "Sorts préparés / emplacements : gérer en module 'spells'."
+  ],
+  "i18n": {
+    "fr": {
+      "nom": "Lancer de sort",
+      "texte": "Vous savez lancer des sorts...",
+      "summary": "Permet de lancer des sorts (carac INT)."
+    }
+  },
+  "metadata": {
+    "author": "auto",
+    "created_at": "2025-09-17",
+    "updated_at": "2025-09-17",
+    "visibility": "homebrew"
+  },
+  "ui": {
+    "icon_id": "icon_spell",
+    "order_hint": 300,
+    "display_rules": {
+      "collapsed_by_default": false
+    }
+  }
+}
