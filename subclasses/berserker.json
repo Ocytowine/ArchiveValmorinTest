@@ -2,7 +2,7 @@
   "id": "berserker",
   "name": "Berserker",
   "classe_id": "guerrier",
-  "capacites_par_niveau": {
+  "features_by_level": {
     "3": [
       "berserker_rage"
     ],
