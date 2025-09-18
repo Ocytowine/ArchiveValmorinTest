@@ -25,7 +25,10 @@
       "Second-souffle"
     ],
     "2": [
-      "Assaut"
+      {
+      "id": "Assaut"
+        "name": "Assaut"
+      }
     ],
     "3": [
       {
