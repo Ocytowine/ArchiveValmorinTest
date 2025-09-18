@@ -1,0 +1,22 @@
+[
+  {
+    "file": "berserker.json",
+    "id": "berserker",
+    "name": "berserker"
+  },
+  {
+    "file": "champion.json",
+    "id": "champion",
+    "name": "champion"
+  },
+  {
+    "file": "enchanter.json",
+    "id": "enchanter",
+    "name": "enchanter"
+  },
+  {
+    "file": "evocateur.json",
+    "id": "evocateur",
+    "name": "evocateur"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "guerrier.json",
+    "id": "guerrier",
+    "name": "guerrier"
+  },
+  {
+    "file": "mage.json",
+    "id": "mage",
+    "name": "mage"
+  }
+]
