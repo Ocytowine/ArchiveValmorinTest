@@ -1,0 +1,37 @@
+[
+  {
+    "file": "arbalete_legere.json",
+    "id": "arbalete_legere",
+    "name": "arbalete_legere"
+  },
+  {
+    "file": "arc_court.json",
+    "id": "arc_court",
+    "name": "arc_court"
+  },
+  {
+    "file": "baguette_magique.json",
+    "id": "baguette_magique",
+    "name": "baguette_magique"
+  },
+  {
+    "file": "baton_magique.json",
+    "id": "baton_magique",
+    "name": "baton_magique"
+  },
+  {
+    "file": "dague.json",
+    "id": "dague",
+    "name": "dague"
+  },
+  {
+    "file": "epee_longue.json",
+    "id": "epee_longue",
+    "name": "epee_longue"
+  },
+  {
+    "file": "hallebarde.json",
+    "id": "hallebarde",
+    "name": "hallebarde"
+  }
+]
