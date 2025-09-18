@@ -2,41 +2,22 @@
   "id": "guerrier",
   "name": "Guerrier",
   "hit_die": 10,
-  "primary_abilities": ["strength", "dexterity"],
-  "saving_throws": ["strength", "constitution"],
+  "primary_abilities": ["force", "dexterite"],
+  "saving_throws": ["force", "constitution"],
   "proficiencies": {
-    "weapons": ["simple", "martial"],
-    "armors": ["light", "medium", "heavy", "shields"],
+    "weapons": ["simples", "martiales"],
+    "armors": ["legeres", "moyennes", "lourdes", "boucliers"],
     "tools": []
   },
   "skill_choices": {
     "choose": 2,
-    "from": [
-      "athletisme",
-      "acrobaties",
-      "perception",
-      "survie",
-      "intimidation"
-    ]
+    "from": ["athletisme", "acrobaties", "perception", "survie", "intimidation"]
   },
   "features_by_level": {
-    "1": [
-      "Style-de-combat",
-      "Second-souffle"
-    ],
-    "2": [
-      {
-      "id": "Assaut"
-        "name": "Assaut"
-      }
-    ],
+    "1": ["style-de-combat", "seconde-souffle"],
+    "2": ["assaut"],
     "3": [
-      {
-        "id": "subclass_choice",
-        "name": "Sous-classe",
-        "choose": 1,
-        "from": ["champion", "berserker"]
-      }
+      { "choice_id": "choix-sous-classe", "type": "sous_classe", "choose": 1, "from": ["champion", "berserker"] }
     ]
   },
   "subclasses": ["champion", "berserker"]

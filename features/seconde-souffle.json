@@ -1,7 +1,7 @@
 {
   "id": "seconde-souffle",
   "short_name": "Seconde souffle",
-  "nom": "Seconde souffle",
+  "name": "Seconde souffle",
   "type": "class_feature",
   "canonical": true,
   "version": "1.0",

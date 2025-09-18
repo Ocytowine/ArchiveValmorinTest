@@ -1,7 +1,7 @@
 {
   "id": "overchannel-evocation",
   "short_name": "Overchannel",
-  "nom": "Surcharge d'évocation",
+  "name": "Surcharge d'évocation",
   "type": "class_feature",
   "canonical": true,
   "version": "1.0",

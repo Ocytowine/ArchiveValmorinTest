@@ -1,7 +1,7 @@
 {
   "id": "style-de-combat",
   "short_name": "Style",
-  "nom": "Style de combat",
+  "name": "Style de combat",
   "type": "class_feature",
   "canonical": true,
   "version": "1.0",
