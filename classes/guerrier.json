@@ -1,31 +1,17 @@
 {
   "id": "guerrier",
-  "nom": "Guerrier",
-  "des_de_vie": 10,
-  "capacites_principales": [
-    "force",
-    "dexterite"
-  ],
-  "jets_de_sauvegarde": [
-    "force",
-    "constitution"
-  ],
-  "maitrises": {
-    "armes": [
-      "simples",
-      "martiales"
-    ],
-    "armures": [
-      "legeres",
-      "intermediaires",
-      "lourdes",
-      "boucliers"
-    ],
-    "outils": []
+  "name": "Guerrier",
+  "hit_die": 10,
+  "primary_abilities": ["strength", "dexterity"],
+  "saving_throws": ["strength", "constitution"],
+  "proficiencies": {
+    "weapons": ["simple", "martial"],
+    "armors": ["light", "medium", "heavy", "shields"],
+    "tools": []
   },
-  "choix_competences": {
-    "choisir": 2,
-    "parmi": [
+  "skill_choices": {
+    "choose": 2,
+    "from": [
       "athletisme",
       "acrobaties",
       "perception",
@@ -33,21 +19,28 @@
       "intimidation"
     ]
   },
-  "capacites_par_niveau": {
+  "features_by_level": {
     "1": [
-      "style_de_combat",
-      "seconde_souffle"
+      "Style de combat",
+      "Seconde souffle"
     ],
     "2": [
-      "assaut"
+      {
+        "id": "fighting_style",
+        "name": "Style de combat",
+        "choose": 1,
+        "from": ["Defense", "Dueling", "Great Weapon Fighting"]
+      },
+      "Assaut"
     ],
-  
     "3": [
-      "subclasses_unlock"
+      {
+        "id": "subclass_choice",
+        "name": "Sous-classe",
+        "choose": 1,
+        "from": ["champion", "berserker"]
+      }
     ]
   },
-  "subclasses": [
-    "champion",
-    "berserker"
-  ]
+  "subclasses": ["champion", "berserker"]
 }
