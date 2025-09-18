@@ -21,16 +21,10 @@
   },
   "features_by_level": {
     "1": [
-      "Style de combat",
-      "Seconde souffle"
+      "Style-de-combat",
+      "Second-souffle"
     ],
     "2": [
-      {
-        "id": "fighting_style",
-        "name": "Style de combat",
-        "choose": 1,
-        "from": ["Defense", "Dueling", "Great Weapon Fighting"]
-      },
       "Assaut"
     ],
     "3": [
