@@ -1,25 +1,25 @@
 {
   "id": "mage",
-  "nom": "Mage",
-  "des_de_vie": 6,
-  "capacites_principales": [
+  "name": "Mage",
+  "hit_die": 6,
+  "primary_abilities": [
     "intelligence",
     "sagesse"
   ],
-  "jets_de_sauvegarde": [
+  "saving_throws": [
     "intelligence",
     "sagesse"
   ],
-  "maitrises": {
-    "armes": [
-      "simples"
+  "proficiencies": {
+    "weapons": [
+      "simple"
     ],
-    "armures": [],
-    "outils": []
+    "armors": [],
+    "tools": []
   },
-  "choix_competences": {
-    "choisir": 2,
-    "parmi": [
+  "skill_choices": {
+    "choose": 2,
+    "from": [
       "arcanes",
       "histoire",
       "investigation",
@@ -27,15 +27,15 @@
       "medecine"
     ]
   },
-  "capacites_par_niveau": {
+  "features_by_level": {
     "1": [
-      "lancer_de_sort"
+      "Lancer de sort"
     ],
     "2": [
-      "arcane_shield"
+      "Bouclier arcanique"
     ]
   },
-  "sous_classes": [
+  "subclasses": [
     "enchanter",
     "evocateur"
   ]
