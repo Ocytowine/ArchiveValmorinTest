@@ -1,0 +1,49 @@
+{
+  "id": "guerrier",
+  "nom": "Guerrier",
+  "des_de_vie": 10,
+  "capacites_principales": [
+    "force",
+    "dexterite"
+  ],
+  "jets_de_sauvegarde": [
+    "force",
+    "constitution"
+  ],
+  "maitrises": {
+    "armes": [
+      "simples",
+      "martiales"
+    ],
+    "armures": [
+      "legeres",
+      "intermediaires",
+      "lourdes",
+      "boucliers"
+    ],
+    "outils": []
+  },
+  "choix_competences": {
+    "choisir": 2,
+    "parmi": [
+      "athletisme",
+      "acrobaties",
+      "perception",
+      "survie",
+      "intimidation"
+    ]
+  },
+  "capacites_par_niveau": {
+    "1": [
+      "style_de_combat",
+      "seconde_souffle"
+    ],
+    "2": [
+      "assaut"
+    ]
+  },
+  "sous_classes": [
+    "champion",
+    "berserker"
+  ]
+}
