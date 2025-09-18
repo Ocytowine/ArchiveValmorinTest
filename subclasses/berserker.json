@@ -1,6 +1,6 @@
 {
   "id": "berserker",
-  "nom": "Berserker",
+  "name": "Berserker",
   "classe_id": "guerrier",
   "capacites_par_niveau": {
     "3": [
