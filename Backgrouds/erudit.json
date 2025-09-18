@@ -1,0 +1,12 @@
+{
+  "id": "erudit",
+  "nom": "Erudit",
+  "maitrises_competences": ["histoire", "arcanes"],
+  "maitrises_outils": ["langue_ancienne"],
+  "choix_langues": 1,
+  "equipement": ["livres de notes", "plume", "encre", "bourse (10 po)"],
+  "trait": {
+    "nom": "Savoir spécialisé",
+    "texte": "Vous avez passé des années à étudier un sujet précis ; vous trouvez aisément des informations dans les bibliothèques et institutions académiques."
+      }
+}
