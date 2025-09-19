@@ -1,0 +1,18 @@
+{
+  "id": "mage_main",
+  "nom": "Main du mage",
+  "niveau": 0,
+  "ecole": "conjuration",
+  "description": "Cantrip : main spectrale.",
+  "effects": [
+    {
+      "id": "mage_main_effect",
+      "type": "ui_message",
+      "source": "mage_main",
+      "payload": {
+        "title": "Main du mage",
+        "body": "Main spectrale invoquée."
+      }
+    }
+  ]
+}

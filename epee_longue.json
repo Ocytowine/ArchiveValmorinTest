@@ -1,0 +1,22 @@
+{
+  "id": "epee_longue",
+  "nom": "Épée longue",
+  "type": "arme",
+  "properties": {
+    "damage": "1d8",
+    "damage_type": "slashing"
+  },
+  "effects": [
+    {
+      "id": "epee_longue_grant",
+      "type": "equipment_grant",
+      "source": "epee_longue",
+      "payload": {
+        "item_id": "epee_longue",
+        "quantity": 1,
+        "equiped": true,
+        "allow_stack": false
+      }
+    }
+  ]
+}
