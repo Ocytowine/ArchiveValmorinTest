@@ -1,9 +1,0 @@
-{
-  "id": "berserker",
-  "name": "Berserker",
-  "classe_id": "guerrier",
-  "features_by_level": {
-    "3": ["berserker-rage"],
-    "6": ["frappe-furieuse"]
-  }
-}
