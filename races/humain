@@ -1,0 +1,41 @@
+{
+  "id": "humain",
+  "nom": "Humain",
+  "description": "Humain (bonus toutes caractéristiques, choix d'une compétence supplémentaire)",
+  "features": [
+    {
+      "id": "humain_racial_stats",
+      "type": "stat_modifier",
+      "source": "humain",
+      "payload": {
+        "stat": "all",
+        "delta": 1,
+        "permanent": true
+      }
+    },
+    {
+      "id": "humain_bonus_competence",
+      "type": "skill_choice",
+      "source": "humain",
+      "payload": {
+        "choose": 1,
+        "from": [
+          "athletisme",
+          "acrobaties",
+          "arcanes",
+          "histoire",
+          "investigation",
+          "perception",
+          "persuasion",
+          "intimidation",
+          "survie",
+          "medecine",
+          "religion",
+          "discretion"
+        ],
+        "expertise": false,
+        "source_label": "Humain"
+      }
+    }
+  ]
+}
