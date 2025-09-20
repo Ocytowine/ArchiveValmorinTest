@@ -1,0 +1,45 @@
+{
+  "id": "soldat",
+  "nom": "Soldat",
+  "name": "Soldier",
+  "type": "background",
+  "description": "Vous avez servi dans une armée organisée ; vous connaissez les protocoles militaires et pouvez obtenir des faveurs de soldats et officiers de rang inférieur.",
+  "effects": [
+    {
+      "id": "soldat.skill.athletics",
+      "type": "proficiency_grant",
+      "source": "soldat",
+      "payload": {
+        "category": "skill",
+        "subtype": "athletics"
+      }
+    },
+    {
+      "id": "soldat.skill.intimidation",
+      "type": "proficiency_grant",
+      "source": "soldat",
+      "payload": {
+        "category": "skill",
+        "subtype": "intimidation"
+      }
+    },
+    {
+      "id": "soldat.ui",
+      "type": "ui_message",
+      "source": "soldat",
+      "payload": {
+        "title": "Background — Soldat",
+        "body": "Vous avez servi dans une armée organisée ; vous connaissez les protocoles militaires et pouvez obtenir des faveurs de soldats et officiers de rang inférieur."
+      }
+    }
+  ],
+  "mecanique": {
+    "skills": [
+      "athletics",
+      "intimidation"
+    ],
+    "languages": [],
+    "equipment": []
+  },
+  "links": {}
+}
