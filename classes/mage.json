@@ -1,0 +1,130 @@
+{
+  "id": "mage",
+  "nom": "Mage",
+  "description": "Lanceur d'art arcane basé sur l'intelligence",
+  "features": [
+    {
+      "id": "mage_spellcasting_lv1",
+      "type": "spellcasting_feature",
+      "source": "mage",
+      "priority": 80,
+      "payload": {
+        "ability": "intelligence",
+        "spell_save_dc_mod": 0,
+        "spell_attack_mod": 0,
+        "slots_table": {
+          "1": 2
+        },
+        "description": "Sorts connus et emplacements de mage niveau 1"
+      }
+    },
+    {
+      "id": "mage_cantrips_initial",
+      "type": "spell_grant",
+      "source": "mage",
+      "payload": {
+        "spell_id": "lumiere",
+        "level": 0,
+        "known": true
+      }
+    },
+    {
+      "id": "mage_cantrips_initial_2",
+      "type": "spell_grant",
+      "source": "mage",
+      "payload": {
+        "spell_id": "mage_main",
+        "level": 0,
+        "known": true
+      }
+    },
+    {
+      "id": "mage_first_level_spells_start",
+      "type": "spell_grant",
+      "source": "mage",
+      "payload": {
+        "spell_id": "projectile_magique",
+        "level": 1,
+        "known": true
+      }
+    },
+    {
+      "id": "mage_first_level_shield",
+      "type": "spell_grant",
+      "source": "mage",
+      "payload": {
+        "spell_id": "bouclier",
+        "level": 1,
+        "known": true
+      }
+    },
+    {
+      "id": "mage_lv2_school_evocation",
+      "type": "casting_modifier",
+      "source": "mage",
+      "priority": 50,
+      "conditions": {
+        "all": [
+          {
+            "kind": "level_gte",
+            "class": "mage",
+            "value": 2
+          }
+        ]
+      },
+      "payload": {
+        "spell_attack_bonus_delta": 0,
+        "spell_save_dc_delta": 0,
+        "apply_to": "school:evocation",
+        "meta": {
+          "display_label": "Maîtrise d'évocation (ébauche)"
+        }
+      }
+    },
+    {
+      "id": "mage_slots_up_to_5",
+      "type": "spellcasting_feature",
+      "source": "mage",
+      "priority": 30,
+      "conditions": {
+        "all": [
+          {
+            "kind": "level_gte",
+            "class": "mage",
+            "value": 5
+          }
+        ]
+      },
+      "payload": {
+        "ability": "intelligence",
+        "spell_save_dc_mod": 0,
+        "spell_attack_mod": 0,
+        "slots_table": {
+          "1": 4,
+          "2": 3,
+          "3": 2
+        },
+        "description": "Mise à jour des emplacements (mage niveau 5)"
+      }
+    },
+    {
+      "id": "mage_extra_spells_lv3_known",
+      "type": "grant_feature",
+      "source": "mage",
+      "priority": 25,
+      "conditions": {
+        "all": [
+          {
+            "kind": "level_gte",
+            "class": "mage",
+            "value": 5
+          }
+        ]
+      },
+      "payload": {
+        "feature_id": "mage_known_fireball_lv3",
+        "apply_immediately": true
+      }
+    }
+  ]
+}
