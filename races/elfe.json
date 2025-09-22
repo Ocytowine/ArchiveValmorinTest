@@ -29,7 +29,7 @@
       "source": "elfe",
       "payload": {
         "category": "weapon",
-        "subtype": "longsword,shortsword,shortbow,longbow",
+        "subtype": "longsword",
         "expertise": false,
         "source_label": "Elfe"
       }
