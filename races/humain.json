@@ -15,7 +15,7 @@
     },
     {
       "id": "humain_bonus_competence",
-      "type": "skill_choice",
+      "type": "choice",
       "source": "humain",
       "payload": {
         "choose": 1,
