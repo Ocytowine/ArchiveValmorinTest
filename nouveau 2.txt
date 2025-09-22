@@ -1,0 +1,41 @@
+
+Noms du personnage (1ere étape)
+
+Race  (1ere étape)
+
+Niv_classe_1 subclasse_1 / Niv_classe_2 subclasse_2 (liste de choix déja établie)  (1ere étape)
+
+background (liste de choix issue d'un index avec description) (1ere étape)
+
+
+[ CARACTÉRISTIQUES ]
+base définie par 36 point que le joueur devra répartir  (1ere étape)
+
+For 11 (+0)   Dex 11 (+0)   Con 11 (+0)   Int 11 (+0)   Sag 11 (+0)   Cha 11 (+0)  
+
+[ MAÎTRISES ]
+Bonus de maîtrise +2 (en fonction du niveau définie en 1ere étape)
+Sauvegardes For +2, Con +2
+Compétences Acrobaties +2, Dressage +2, Survie +2 (Perception passive 10)
+Armes armes courantes, armes de guerre
+Armures toutes les armures, boucliers,
+Outils matériel d'alchimiste, véhicules (terrestres)
+Langues commun, elfique
+
+[ COMBAT ]
+pv 10 ; DV 1d10
+Init +0 ; Vitesse 7,50 m
+CA 18 (cotte de mailles 16, bouclier +2, Dex +0)
+Épée longue. Corps à corps : +2 (1d8 tranchant ; polyvalente (1d10))
+Arbalète légère. Distance : +4 (1d8 perforant ; munitions (portée 24 m/96 m), chargement, à deux mains)
+
+[ SORTS ]
+
+[ CAPACITÉS ET TRAITS ]
+Second souffle (1d10+1 pv/repos)
+Style de combat (archerie)
+Hospitalité rustique
+
+Equipement :
+
+Description physique :
