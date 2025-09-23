@@ -1,7 +1,7 @@
 {
-  "id": "mage",
-  "nom": "Mage",
-  "description": "Lanceur d'art arcane basé sur l'intelligence",
+  "id": "mage_test",
+  "nom": "Mage de test",
+  "description": "Lanceur d'art arcane basé sur l'intelligence ou pas",
   "features": [
     {
       "id": "mage_spellcasting_lv1",
