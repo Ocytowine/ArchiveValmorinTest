@@ -1,6 +1,6 @@
 {
   "id": "haut_elfe",
-  "nom": "Haut-Elfe",
+  "name": "Haut-Elfe",
   "parent": "elfe",
   "description": "Sous-race haut elfe : +1 intelligence, un sort mineur (cantrip) supplémentaire connu",
   "features": [

@@ -1,6 +1,6 @@
 {
   "id": "elfe",
-  "nom": "Elfe",
+  "name": "Elfe",
   "description": "Elfe (bonus dexterite, vision nocturne, proficient armes d'elfe)",
   "features": [
     {

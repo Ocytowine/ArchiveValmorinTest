@@ -1,6 +1,6 @@
 {
-  "id": "classe_test_sort_l1",
-  "name": "Classe de test (sort niveau 1)",
+  "id": "mage_test",
+  "name": "Mage test (sort niveau 1 index auto)",
   "effects": [
     {
       "id": "classe_test_spellcasting",
@@ -13,7 +13,7 @@
     {
       "id": "classe_test_spell_choice",
       "type": "choice",
-      "source": "Choix des sorts",
+      "source": "Choix des sorts de niveau 1",
       "payload": {
         "ui_id": "classe_test_spell_choice",
         "category": "spell",

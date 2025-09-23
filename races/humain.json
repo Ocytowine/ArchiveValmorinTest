@@ -1,6 +1,6 @@
 {
   "id": "humain",
-  "nom": "Humain",
+  "name": "Humain",
   "description": "Bonus polyvalent, un choix de compétence.",
   "features": [
     {
