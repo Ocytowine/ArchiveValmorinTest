@@ -1,7 +1,7 @@
 {
   "id": "projectile_magique",
-  "nom": "Projectile magique",
-  "niveau": 1,
+  "name": "Projectile magique",
+  "level": 1,
   "ecole": "evocation",
   "description": "Projette automatiquement des traits d'énergie qui touchent automatiquement.",
   "effects": [

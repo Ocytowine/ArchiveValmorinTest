@@ -1,6 +1,6 @@
 {
   "id": "mage_known_fireball_lv3",
-  "nom": "Accès boule de feu (exemple)",
+  "name": "Accès boule de feu (exemple)",
   "features": [
     {
       "id": "mage_fireball_spell_grant",

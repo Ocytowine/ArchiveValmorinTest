@@ -1,7 +1,7 @@
 {
   "id": "bouclier",
-  "nom": "Bouclier",
-  "niveau": 1,
+  "name": "Bouclier",
+  "level": 1,
   "ecole": "abjuration",
   "description": "Réaction : +5 à la CA jusqu'au début du prochain tour.",
   "effects": [

@@ -1,7 +1,7 @@
 {
   "id": "boule_de_feu",
-  "nom": "Boule de feu",
-  "niveau": 3,
+  "name": "Boule de feu",
+  "level": 3,
   "ecole": "evocation",
   "description": "Explosion d'énergie infligeant 8d6 feu dans une zone.",
   "effects": [

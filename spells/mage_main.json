@@ -1,7 +1,7 @@
 {
   "id": "mage_main",
-  "nom": "Main du mage",
-  "niveau": 0,
+  "name": "Main du mage",
+  "level": 0,
   "ecole": "conjuration",
   "description": "Cantrip : main spectrale.",
   "effects": [

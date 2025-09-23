@@ -1,7 +1,7 @@
 {
   "id": "lumiere",
-  "nom": "Lumière",
-  "niveau": 0,
+  "name": "Lumière",
+  "level": 0,
   "ecole": "evocation",
   "description": "Cantrip lumineux simple.",
   "effects": [
