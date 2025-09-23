@@ -16,7 +16,7 @@
       "payload": {
         "ui_id": "classe_test_spell_choice",
         "category": "spell",
-        "choose": 1,
+        "choose": 2,
         "auto_from": {
           "collection": "spells",
           "filters": { "level": 1 },
