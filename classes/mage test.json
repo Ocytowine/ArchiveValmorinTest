@@ -13,6 +13,7 @@
     {
       "id": "classe_test_spell_choice",
       "type": "choice",
+      "source": "Choix des sorts",
       "payload": {
         "ui_id": "classe_test_spell_choice",
         "category": "spell",
@@ -23,7 +24,7 @@
           "id_fields": ["id", "slug"],
           "label_fields": ["name", "nom"]
         }
-      }
+      }   
     }
   ]
 }
