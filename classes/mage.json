@@ -1,6 +1,6 @@
 {
   "id": "mage",
-  "nom": "Mage",
+  "name": "Mage",
   "description": "Lanceur d'art arcane basé sur l'intelligence",
   "features": [
     {

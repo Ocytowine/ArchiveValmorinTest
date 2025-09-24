@@ -1,6 +1,7 @@
 {
   "id": "mage_test",
   "name": "Mage test (sort niveau 1 index auto)",
+  "description": "Lanceur d'art arcane basé sur l'intelligence",
   "effects": [
     {
       "id": "classe_test_spellcasting",

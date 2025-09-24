@@ -1,8 +1,6 @@
 {
   "id": "soldat",
-  "nom": "Soldat",
-  "name": "Soldier",
-  "type": "background",
+  "name": "Soldat",
   "description": "Vous avez servi dans une armée organisée ; vous connaissez les protocoles militaires et pouvez obtenir des faveurs de soldats et officiers de rang inférieur.",
   "effects": [
     {
@@ -32,14 +30,5 @@
         "body": "Vous avez servi dans une armée organisée ; vous connaissez les protocoles militaires et pouvez obtenir des faveurs de soldats et officiers de rang inférieur."
       }
     }
-  ],
-  "mecanique": {
-    "skills": [
-      "athletics",
-      "intimidation"
-    ],
-    "languages": [],
-    "equipment": []
-  },
-  "links": {}
+  ]
 }
