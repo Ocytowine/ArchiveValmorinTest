@@ -30,7 +30,7 @@
     {
       "id": "classe_test_spell_choice",
       "type": "choix",
-      "source": "Choix des sorts de niveau 1",
+      "source": "Choix des sorts de niveau ",
       "payload": {
         "ui_id": "classe_test_spell_choice",
         "category": "spell",
