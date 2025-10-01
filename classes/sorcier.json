@@ -12,7 +12,7 @@
       }
     },
     {
-      "id": "classe_test_spell_choice",
+      "id": "sorcier_spell_choice_1",
       "type": "choice",
       "source": "Choix des sorts de niveau 1",
       "payload": {
@@ -28,9 +28,9 @@
       }   
     },
     {
-      "id": "classe_test_spell_choice",
+      "id": "sorcier_spell_choice_0",
       "type": "choix",
-      "source": "Choix des sorts de niveau ",
+      "source": "Choix des sorts de niveau 0 ",
       "payload": {
         "ui_id": "classe_test_spell_choice",
         "category": "spell",
