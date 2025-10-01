@@ -1,0 +1,47 @@
+{
+  "id": "sorcier",
+  "name": "Sorcier",
+  "description": "Lanceur d'art arcane basé sur l'intelligence",
+  "effects": [
+    {
+      "id": "classe_test_spellcasting",
+      "type": "spellcasting_feature",
+      "payload": {
+        "ability": "intelligence",
+        "slots_table": { "1": 2 }
+      }
+    },
+    {
+      "id": "classe_test_spell_choice",
+      "type": "choice",
+      "source": "Choix des sorts de niveau 1",
+      "payload": {
+        "ui_id": "classe_test_spell_choice",
+        "category": "spell",
+        "choose": 2,
+        "auto_from": {
+          "collection": "spells",
+          "filters": { "level": 1 },
+          "id_fields": ["id", "slug"],
+          "label_fields": ["name", "nom"]
+        }
+      }   
+    },
+    {
+      "id": "classe_test_spell_choice",
+      "type": "choix",
+      "source": "Choix des sorts de niveau 1",
+      "payload": {
+        "ui_id": "classe_test_spell_choice",
+        "category": "spell",
+        "choose": 3,
+        "auto_from": {
+          "collection": "spells",
+          "filters": { "level": 0 },
+          "id_fields": ["id", "slug"],
+          "label_fields": ["name", "nom"]
+        }
+      }   
+    }
+  ]
+}

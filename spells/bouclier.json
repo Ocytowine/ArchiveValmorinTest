@@ -3,7 +3,8 @@
   "name": "Bouclier",
   "level": 1,
   "ecole": "abjuration",
-  "description": "Réaction : +5 à la CA jusqu'au début du prochain tour.",
+  "description": "Entourre le lanceur d'une aurra protectrice",
+  "effect_label": "Réaction : +5 à la CA jusqu'au début du prochain tour.",
   "effects": [
     {
       "id": "bouclier_on_cast",
@@ -28,8 +29,7 @@
               "permanent": false
             }
           }
-        ],
-        "description": "Gagne +5 CA (réaction) jusqu'au début du prochain tour"
+        ]
       }
     }
   ]
