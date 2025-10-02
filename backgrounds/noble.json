@@ -1,0 +1,22 @@
+{
+  "id": "noble",
+  "name": "Noble",
+  "description": "Vous êtes riche",
+  "effects": [
+    {
+      "id": "noble.bourse",
+      "type": "items_proposal",
+      "source": "noble",
+      "priority": 30,
+      "payload": {
+        "items": [
+          { 
+            "id": "bourse",
+            "qty": 1,
+            "coins": { "gold": 50, "silver": 20, "copper": 10 }
+          }
+        ]
+      }
+    }
+  ]
+}
