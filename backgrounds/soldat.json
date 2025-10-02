@@ -7,6 +7,7 @@
       "id": "soldat.skill.athletics",
       "type": "proficiency_grant",
       "source": "soldat",
+      "priority": 20,
       "payload": {
         "category": "skill",
         "subtype": "athletics"
@@ -16,6 +17,7 @@
       "id": "soldat.bourse",
       "type": "items_proposal",
       "source": "soldat",
+      "priority": 30,
       "payload": {
         "items": [
           { 
@@ -30,6 +32,7 @@
       "id": "soldat.skill.intimidation",
       "type": "proficiency_grant",
       "source": "soldat",
+      "priority": 40,
       "payload": {
         "category": "skill",
         "subtype": "intimidation"
