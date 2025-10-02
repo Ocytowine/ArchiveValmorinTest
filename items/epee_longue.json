@@ -2,7 +2,7 @@
   "id": "epee_longue",
   "nom": "Épée longue",
   "type": "arme",
-  "weight": 1.5
+  "weight": 1.5,
   "value": {
     "gold": 15,
     "silver": 0,

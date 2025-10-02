@@ -13,6 +13,20 @@
       }
     },
     {
+      "id": "soldat.bourse",
+      "type": "items_proposal",
+      "source": "soldat",
+      "payload": {
+        "items": [
+          { 
+            "id": "bourse",
+            "qty": 1,
+            "coins": { "gold": 5, "silver": 20, "copper": 0 }
+          }
+        ]
+      }
+    },
+    {
       "id": "soldat.skill.intimidation",
       "type": "proficiency_grant",
       "source": "soldat",
