@@ -1,0 +1,20 @@
+{
+  "id": "guerrier",
+  "name": "Guerrier",
+  "description": "Combattant martial",
+  "effects": [
+    {
+      "id": "guerrier-items",
+      "type": "items_proposal",
+      "source": "guerrier",
+      "payload": {
+        "items": [
+          { "id": "arc", "qty": 1 },
+          { "id": "fleche", "qty": 20 },
+          { "id": "epee_longue", "qty": 1 }
+        ]
+      }
+    }
+  ]
+}
+

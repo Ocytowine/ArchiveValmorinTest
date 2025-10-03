@@ -1,0 +1,11 @@
+{
+  "id": "bourse",
+  "nom": "Bourse",
+  "type": "bourse",
+  "weight": 0.2,
+  "value": {
+    "gold": 0,
+    "silver": 0,
+    "copper": 10
+  }
+}

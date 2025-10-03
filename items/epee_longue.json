@@ -2,6 +2,12 @@
   "id": "epee_longue",
   "nom": "Épée longue",
   "type": "arme",
+  "weight": 1.5,
+  "value": {
+    "gold": 15,
+    "silver": 0,
+    "copper": 0
+  },
   "properties": {
     "damage": "1d8",
     "damage_type": "slashing"

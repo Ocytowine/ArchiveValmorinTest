@@ -7,27 +7,35 @@
       "id": "soldat.skill.athletics",
       "type": "proficiency_grant",
       "source": "soldat",
+      "priority": 20,
       "payload": {
         "category": "skill",
         "subtype": "athletics"
       }
     },
     {
-      "id": "soldat.skill.intimidation",
-      "type": "proficiency_grant",
+      "id": "soldat.bourse",
+      "type": "items_proposal",
       "source": "soldat",
+      "priority": 30,
       "payload": {
-        "category": "skill",
-        "subtype": "intimidation"
+        "items": [
+          { 
+            "id": "bourse",
+            "qty": 1,
+            "coins": { "gold": 5, "silver": 20, "copper": 0 }
+          }
+        ]
       }
     },
     {
-      "id": "soldat.ui",
-      "type": "ui_message",
+      "id": "soldat.skill.intimidation",
+      "type": "proficiency_grant",
       "source": "soldat",
+      "priority": 40,
       "payload": {
-        "title": "Background — Soldat",
-        "body": "Vous avez servi dans une armée organisée ; vous connaissez les protocoles militaires et pouvez obtenir des faveurs de soldats et officiers de rang inférieur."
+        "category": "skill",
+        "subtype": "intimidation"
       }
     }
   ]
