@@ -13,49 +13,41 @@
         "spell_save_dc_mod": 0,
         "spell_attack_mod": 0,
         "slots_table": { "1": 2 },
-        "description": "Sorts connus et emplacements de mage niveau 1"
+        "description": "emplacements de mage niveau 1"
       }
     },
     {
-      "id": "mage_cantrips_initial",
-      "type": "spell_grant",
-      "source": "mage",
+      "id": "mage_spell_choice_1",
+      "type": "choice",
+      "source": "Choix des sorts de niveau 1",
       "payload": {
-        "spell_id": "lumiere",
-        "level": 0,
-        "known": true
-      }
+        "ui_id": "classe_test_spell_choice",
+        "category": "spell",
+        "choose": 2,
+        "auto_from": {
+          "collection": "spells",
+          "filters": { "level": 1 },
+          "id_fields": ["id", "slug"],
+          "label_fields": ["name", "nom"]
+        }
+      }   
     },
     {
-      "id": "mage_cantrips_initial_2",
-      "type": "spell_grant",
-      "source": "mage",
+      "id": "mage_spell_choice_0",
+      "type": "choix",
+      "source": "Choix des sorts de niveau 0 ",
       "payload": {
-        "spell_id": "mage_main",
-        "level": 0,
-        "known": true
-      }
-    },
-    {
-      "id": "mage_first_level_spells_start",
-      "type": "spell_grant",
-      "source": "mage",
-      "payload": {
-        "spell_id": "projectile_magique",
-        "level": 1,
-        "known": true
-      }
-    },
-    {
-      "id": "mage_first_level_shield",
-      "type": "spell_grant",
-      "source": "mage",
-      "payload": {
-        "spell_id": "bouclier",
-        "level": 1,
-        "known": true
-      }
-    },
+        "ui_id": "classe_test_spell_choice",
+        "category": "spell",
+        "choose": 3,
+        "auto_from": {
+          "collection": "spells",
+          "filters": { "level": 0 },
+          "id_fields": ["id", "slug"],
+          "label_fields": ["name", "nom"]
+           }
+          }
+        },
     {
       "id": "mage_choice_school",
       "type": "choice",
