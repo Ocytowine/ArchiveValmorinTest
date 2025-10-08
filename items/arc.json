@@ -1,0 +1,15 @@
+{
+  "id": "arc",
+  "nom": "Arc",
+  "type": "arme",
+  "weight": 1.5,
+  "value": {
+    "gold": 10,
+    "silver": 0,
+    "copper": 0
+  },
+  "properties": {
+    "damage": "1d5",
+    "damage_type": "slashing"
+  }
+}
