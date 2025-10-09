@@ -1,6 +1,6 @@
 {
   "id": "bourse",
-  "nom": "Bourse",
+  "name": "Bourse",
   "type": "bourse",
   "weight": 0.2,
   "value": {

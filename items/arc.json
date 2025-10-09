@@ -1,15 +1,20 @@
 {
   "id": "arc",
-  "nom": "Arc",
+  "name": "Arc",
   "type": "arme",
-  "weight": 1.5,
+  "description": "Arc en bois artisanal classique",
+  "equiped": true,
+  "allow_stack": false,
+  "harmonisable": false,
+  "weight": 0.8,
   "value": {
     "gold": 10,
     "silver": 0,
     "copper": 0
   },
-  "properties": {
+  "properties_fight": {
     "damage": "1d5",
     "damage_type": "slashing"
+  },
+  "properties_equip": false
   }
-}

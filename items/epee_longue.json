@@ -1,28 +1,20 @@
 {
   "id": "epee_longue",
-  "nom": "Épée longue",
+  "name": "Épée longue",
   "type": "arme",
+  "description": "épée de guerre classique",
+  "equiped": true,
+  "allow_stack": false,
+  "harmonisable": false,
   "weight": 1.5,
   "value": {
     "gold": 15,
     "silver": 0,
     "copper": 0
   },
-  "properties": {
+  "properties_fight": {
     "damage": "1d8",
     "damage_type": "slashing"
   },
-  "effects": [
-    {
-      "id": "epee_longue_grant",
-      "type": "equipment_grant",
-      "source": "epee_longue",
-      "payload": {
-        "item_id": "epee_longue",
-        "quantity": 1,
-        "equiped": true,
-        "allow_stack": false
-      }
-    }
-  ]
+    "properties_equip": false
 }
