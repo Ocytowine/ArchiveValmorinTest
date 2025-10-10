@@ -7,5 +7,9 @@
     "gold": 0,
     "silver": 0,
     "copper": 10
-  }
+  },
+  "description": "bours en cuir classique",
+  "equiped": false,
+  "allow_stack": false,
+  "harmonisable": false
 }
