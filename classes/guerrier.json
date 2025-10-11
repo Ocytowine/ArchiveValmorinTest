@@ -2,17 +2,37 @@
   "id": "guerrier",
   "name": "Guerrier",
   "description": "Combattant martial",
-  "effects": [
+  "features": [
     {
       "id": "guerrier-items",
       "type": "items_proposal",
       "source": "guerrier",
+      "priority": 80,
       "payload": {
         "items": [
           { "id": "arc", "qty": 1 },
           { "id": "fleche", "qty": 20 },
           { "id": "epee_longue", "qty": 1 }
         ]
+      }
+    },
+    { 
+      "id": "guerrier-traits",
+     "type": "traits",
+     "source": "guerrier",
+     "priority": 70,
+     "payload": {
+      "dv": "d10",
+      "hit_points": {
+        "level_1": "10 + mod.CON",
+        "per_level_after_1": "1d10 (ou 6) + mod.CON"
+      },
+      "proficiency_grant": {
+        "armor": ["legere", "intermediaire", "lourde", "boucliers"],
+        "weapons": ["simples", "de_guerre"],
+        "tools": []
+      },
+      "saving_throws": ["force", "constitution"]
       }
     }
   ]
