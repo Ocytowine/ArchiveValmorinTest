@@ -1,12 +1,12 @@
 {
-  "id": "epee_longue",
-  "name": "Épée longue",
+  "id": "baton",
+  "name": "Bâton",
   "type": "arme",
-  "description": "épée de guerre classique",
+  "description": "Bâton de magicien, en bois artisanal classique",
   "equiped": true,
   "allow_stack": false,
   "harmonisable": false,
-  "focalisateur": false,
+  "focalisateur": true,
   "weight": 1.5,
   "value": {
     "gold": 15,
@@ -15,7 +15,7 @@
   },
   "properties_fight": {
     "damage": "1d8",
-    "damage_type": "tranchant"
+    "damage_type": "slashing"
   },
     "properties_equip": false
 }

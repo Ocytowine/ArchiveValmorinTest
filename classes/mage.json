@@ -16,6 +16,20 @@
         "description": "Sorts connus et emplacements de mage niveau 1"
       }
     },
+    {"id": "mage_items_initial",
+      "type": "items_proposal",
+      "source": "mage",
+      "priority": 80,
+      "payload": {
+        "items": [
+          { "id": "grimoire", "qty": 1 },
+          { "id": "baton", "qty": 1 },
+          { "id": "dague", "qty": 1 },
+          { "id": "sacoche_composants", "qty": 1 },
+          { "id": "robe", "qty": 1 }
+        ]
+      }
+    },
     {
       "id": "mage_cantrips_initial",
       "type": "spell_grant",

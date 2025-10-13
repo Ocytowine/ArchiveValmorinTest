@@ -6,6 +6,7 @@
   "equiped": true,
   "allow_stack": false,
   "harmonisable": false,
+  "focalisateur": false,
   "weight": 0.8,
   "value": {
     "gold": 10,

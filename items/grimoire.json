@@ -1,0 +1,18 @@
+{
+  "id": "grimoire",
+  "name": "grimoire",
+  "type": "grimoire",
+  "description": "grimoire de magicien, en cuir, dégage une odeur de parchemin ancien",
+  "equiped": true,
+  "allow_stack": false,
+  "harmonisable": false,
+  "focalisateur": false,
+  "weight": 0.8,
+  "value": {
+    "gold": 20,
+    "silver": 0,
+    "copper": 0
+  },
+  "properties_fight": false,
+  "properties_equip": false
+  }
