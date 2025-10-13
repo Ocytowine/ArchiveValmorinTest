@@ -19,5 +19,17 @@ Items :
   },
   "effects": décrires les effets " mécanique " voir Création de données pour exemple
 
-effects : chaque type d'effet à un Payload 
+effects : chaque type d'effet à un Payload (charge utile à traiter)
 
+Classes : 
+
+ "payload": {
+      "dv": "d10",
+      "hit_points": {
+        "level_1": "10 + mod.CON",
+        "per_level_after_1": "1d10 (ou 6) + mod.CON"
+      },
+      "proficiency_grant": {
+        "armor": ["legere", "intermediaire", "lourde", "boucliers"],
+        "weapons": ["simples", "de_guerre"],
+        "tools": []

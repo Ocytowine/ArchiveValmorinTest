@@ -2,6 +2,7 @@
   "id": "mage",
   "name": "Mage",
   "description": "Lanceur d'art arcane basé sur l'intelligence",
+  "ui_template": "mage.vue",
   "features": [
     {
       "id": "mage_spellcasting_lv1",
