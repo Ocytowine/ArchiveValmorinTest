@@ -5,15 +5,34 @@
   "ui_template": "mage.vue",
   "features": [
     {
+      "id": "mage-traits",
+      "type": "traits",
+      "source": "mage",
+      "priority": 70,
+      "payload": {
+        "dv": "1d6",
+        "hit_points": {
+          "level_1": "6 + mod.CON",
+          "per_level_after_1": "4 + mod.CON"
+        },
+        "proficiency_grant": {
+          "armor": [],
+          "weapons": [],
+          "tools": []
+        },
+        "saving_throws": ["intelligence", "sagesse"]
+      }
+    },
+    {
       "id": "mage_spellcasting_lv1",
       "type": "spellcasting_feature",
       "source": "mage",
       "priority": 80,
       "payload": {
         "ability": "intelligence",
-        "spell_save_dc_mod": 0,
-        "spell_attack_mod": 0,
-        "slots_table": { "1": 2 },
+        "spell_save_dc_mod": "8 + mait + mod.INT",
+        "spell_attack_mod": "mait + mod.INT",
+        "slots_table": { "0": "infinie", "1": 2 },
         "description": "Sorts connus et emplacements de mage niveau 1"
       }
     },
