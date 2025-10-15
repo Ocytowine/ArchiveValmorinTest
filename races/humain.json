@@ -9,6 +9,16 @@
       "source": "humain",
       "payload": { "stat": "all", "delta": 1, "permanent": true }
     },
+    {"id": "humain_racial_stats_base",
+      "type": "add_stat_base",
+      "source": "humain",
+      "payload": {"vitesse": 9, "nivFatigueMax": 6, "initiative": "1d20 + mod.DEX", "CA": "10 + mod.DEX", 
+        "besoin": [
+          {"sommeil": true, "duree": "8h", "fatigueLimite": "24h"},
+          {"nourriture": true, "qteMin": "0.5kg", "fatigueLimite": "3j"},
+          {"eau": true, "qteMin": "8L", "fatigueLimite": "12h"}]
+      }
+    },
     {
       "id": "humain_bonus_competence",
       "type": "choice",
