@@ -10,7 +10,6 @@
       "source": "mage",
       "priority": 70,
       "payload": {
-        "dv": "1d6",
         "hit_points": {
           "level_1": "6 + mod.CON",
           "per_level_after_1": "4 + mod.CON"
@@ -24,7 +23,7 @@
       }
     },
     {
-      "id": "mage_spellcasting_lv1",
+      "id": "mage_basics",
       "type": "spellcasting_feature",
       "source": "mage",
       "priority": 80,
