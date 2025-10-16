@@ -1,27 +1,65 @@
 {
   "id": "ecole_evocation",
   "name": "École d'évocation",
+  "description": "Vous maîtrisez la magie qui manipule les forces élémentaires brutes pour créer des effets spectaculaires.",
+  "description_Longue": "Vous concentrez vos études sur la magie qui crée des effets élémentaires puissants telles qu'un froid glacial, une flamme brûlante, un roulement de tonnerre, une foudre qui crépite ou bien encore de l'acide brûlant. Certains évocateurs se font employer par les forces militaires, servant d'artillerie pour faire sauter les armées ennemies de loin. D'autres utilisent leurs pouvoirs spectaculaires pour protéger les faibles, tandis que d'autres servent leur propre intérêt comme des bandits, des aventuriers ou des tyrans en herbe.",
   "class_id": "mage",
-  "effects": [
+  "features": [
     {
-      "id": "mage_evocation_mastery",
-      "type": "casting_modifier",
+      "id": "ecole-evocation_feature_level2",
+      "type": "feature_grant",
       "source": "ecole_evocation",
+      "conditions": {
+        "all": [
+          { "kind": "level_gte", "class": "mage", "value": 2 }
+        ]
+      },
+      "priority": 50,
       "payload": {
-        "spell_attack_bonus_delta": 0,
-        "spell_save_dc_delta": 0,
-        "apply_to": ["school:evocation"],
-        "meta": {
-          "display_label": "Maîtrise d'évocation"
-        }
+        "all": ["evocateur", "façonneur_de_sort"]
+      }
+    },
+    {
+      "id": "ecole-evocation_feature_level6",
+      "type": "feature_grant",
+      "source": "ecole_evocation",
+      "conditions": {
+        "all": [
+          { "kind": "level_gte", "class": "mage", "value": 6 }
+        ]
+      },
+      "priority": 50,
+      "payload": {
+        "all": ["sort_mineur_puissant", "???"]
+      }
+    },
+    {
+        "id": "ecole-evocation_feature_level10",
+      "type": "feature_grant",
+      "source": "ecole_evocation",
+      "conditions": {
+        "all": [
+          { "kind": "level_gte", "class": "mage", "value": 10 }
+        ]
+      },
+      "priority": 50,
+      "payload": {
+        "all": ["???", "???"]
+      }
+    },
+    {
+          "id": "ecole-evocation_feature_level14",
+      "type": "feature_grant",
+      "source": "ecole_evocation",
+      "conditions": {
+        "all": [
+          { "kind": "level_gte", "class": "mage", "value": 14 }
+        ]
+      },
+      "priority": 50,
+      "payload": {
+        "all": ["???", "???"]
       }
     }
-  ],
-  "links": {
-    "grants": [
-      "ecole_evocation_feature_level6",
-      "ecole_evocation_feature_level10",
-      "ecole_evocation_feature_level14"
-    ]
-  }
+  ]
 }

@@ -2,7 +2,7 @@
   "id": "sorcier",
   "name": "Sorcier",
   "description": "Lanceur d'art arcane basé sur l'intelligence",
-  "effects": [
+  "features": [
     {
       "id": "classe_test_spellcasting",
       "type": "spellcasting_feature",

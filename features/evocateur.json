@@ -1,0 +1,22 @@
+ {
+ "id": "evocateur",
+ "name": "Evocateur érudit",
+ "description": "l'or et le temps que vous devez passer pour copier un sort d'évocation dans votre grimoire sont réduits de moitié.",
+    "effects": [
+        {
+      "id": "mod_add_spell_evocation",
+      "type": "mod_add_spell",
+      "source": "evocateur",
+      "priority": 20,
+      "conditions": {
+        "all": [
+          { "action":"copie_spell", "ecole": "evocation" }
+        ]
+      },
+      "payload": {
+        "cost_multiplier": 0.5,
+        "time_multiplier": 0.5
+      }
+        }
+    ]
+}
