@@ -5,6 +5,7 @@ Items :
   "id": 
   "name": 
   "type": texte minuscule. arme / armure / munition / bouclier / vêtement / bourse / grimoire / accéssoire
+  "subtype"
   "description": texte. description visuel (peut être définie par joueur au début /création)
   "lore": texte. histoire de l'item, ou à t'il était aquis...
   "equiped": équipable (true ou false) (a voir la logique du slot équipable en fonction du type)

@@ -2,6 +2,7 @@
   "id": "arc",
   "name": "Arc",
   "type": "arme",
+  "subtype" : "simple",
   "description": "Arc en bois artisanal classique",
   "equiped": true,
   "allow_stack": false,
@@ -13,9 +14,10 @@
     "silver": 0,
     "copper": 0
   },
-  "properties_fight": {
+  "effect": {
+    "mod": "mod.DEX",
     "damage": "1d5",
-    "damage_type": "slashing"
+    "damage_type": "Perforant"
   },
-  "properties_equip": false
+  "properties": {"reload": 1, "range": {"normal": 6, "long": 18}, "two_handed": true, "propelled": true, "simple": true},
   }
