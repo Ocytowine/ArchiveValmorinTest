@@ -19,8 +19,7 @@
       "source": "elfe",
       "payload": {
         "sense_type": "vision nocturne",
-        "range": 18,
-        "units": "meters"
+        "range": 18
       }
     },
     {
