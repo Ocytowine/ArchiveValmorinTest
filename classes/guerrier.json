@@ -28,7 +28,7 @@
         },
         "proficiency_grant": {
           "armor": ["legere", "intermediaire", "lourde", "boucliers"],
-          "weapons": ["simples", "de_guerre"],
+          "weapons": ["simple", "martiale"],
           "tools": []
         },
         "saving_throws": ["force", "constitution"]
