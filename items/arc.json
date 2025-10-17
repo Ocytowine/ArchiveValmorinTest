@@ -19,5 +19,11 @@
     "damage": "1d5",
     "damage_type": "Perforant"
   },
-  "properties": {"reload": 1, "range": {"normal": 6, "long": 18}, "two_handed": true, "propelled": true, "simple": true},
+  "properties": 
+  {
+    "reload": 1,
+    "range": {"x": 50, "y": 150},
+    "two_handed": true,
+    "ammunition": true,
+    "simple": true
   }

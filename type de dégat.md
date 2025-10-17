@@ -19,7 +19,7 @@ Catégorie :
         Acide
         Foudre
         Poison
-        Tonnerre	
+        Tonnerre
 
     Magique / Énergétique :	(Spécifique aux sorts certaine armes et entités puissantes)
 
