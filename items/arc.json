@@ -24,6 +24,6 @@
     "reload": 1,
     "range": {"x": 50, "y": 150},
     "two_handed": true,
-    "ammunition": true,
-    "simple": true
+    "ammunition": true
   }
+}

@@ -2,6 +2,7 @@
   "id": "baton",
   "name": "Bâton",
   "type": "arme",
+  "subtype" : ["simple","monastique"],
   "description": "Bâton de magicien, en bois artisanal classique",
   "equiped": true,
   "allow_stack": false,
@@ -13,9 +14,15 @@
     "silver": 0,
     "copper": 0
   },
-  "properties_fight": {
-    "damage": "1d8",
-    "damage_type": "slashing"
+   "effect": {
+    "mod": "mod.DEX",
+    "damage": "1d5",
+    "damage_type": "contondant"
   },
-    "properties_equip": false
+"properties": 
+  {
+    "finesse": true,
+    "reach": true,
+    "versatile": true
+  }
 }

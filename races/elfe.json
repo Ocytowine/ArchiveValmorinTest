@@ -8,7 +8,7 @@
       "type": "stat_modifier",
       "source": "elfe",
       "payload": {
-        "stat": "dexterity",
+        "stat": "dexterite",
         "delta": 2,
         "permanent": true
       }
@@ -18,7 +18,7 @@
       "type": "sense_grant",
       "source": "elfe",
       "payload": {
-        "sense_type": "darkvision",
+        "sense_type": "vision nocturne",
         "range": 18,
         "units": "meters"
       }
@@ -28,8 +28,8 @@
       "type": "proficiency_grant",
       "source": "elfe",
       "payload": {
-        "category": "weapon",
-        "subtype": "longsword",
+        "category": "arme",
+        "subtype": "elfique",
         "expertise": false,
         "source_label": "Elfe"
       }

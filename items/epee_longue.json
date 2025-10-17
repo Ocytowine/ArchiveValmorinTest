@@ -2,6 +2,7 @@
   "id": "epee_longue",
   "name": "Épée longue",
   "type": "arme",
+  "subtype" : "martiale",
   "description": "épée de guerre classique",
   "equiped": true,
   "allow_stack": false,
@@ -13,9 +14,12 @@
     "silver": 0,
     "copper": 0
   },
-  "properties_fight": {
+ "effect": {
     "damage": "1d8",
     "damage_type": "tranchant"
   },
-    "properties_equip": false
+    "properties": {
+      "versatile": true,
+      "weapon_mastery": "Push"
+    }
 }
