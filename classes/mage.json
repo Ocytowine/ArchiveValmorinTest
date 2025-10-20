@@ -102,7 +102,7 @@
       "priority": 50,
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 2 }
+          { "kind": "level_gte", "classeId": "mage", "value": 2 }
         ]
       },
       "payload": {
@@ -111,7 +111,7 @@
         "choose": 1,
         "auto_from": {
           "collection": "subclasses",
-          "filters": { "class_id": "mage" },
+          "filters": { "classeId": "mage" },
           "id_fields": ["id", "slug"],
           "label_fields": ["name", "nom"]
         }
@@ -124,7 +124,7 @@
       "priority": 30,
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 5 }
+          { "kind": "level_gte", "classeId": "mage", "value": 5 }
         ]
       },
       "payload": {
@@ -139,7 +139,7 @@
       "priority": 25,
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 5 }
+          { "kind": "level_gte", "classeId": "mage", "value": 5 }
         ]
       },
       "payload": {
