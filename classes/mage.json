@@ -3,6 +3,11 @@
   "name": "Mage",
   "description": "Lanceur d'art arcane basé sur l'intelligence",
   "ui_template": "mage.vue",
+  "multiclassing_requirements": {
+    "all": [
+      { "stat": "intelligence", "min_value": 13 }
+    ]
+  },
   "features": [
     {
       "id": "mage-traits",
@@ -31,6 +36,7 @@
         "ability": "intelligence",
         "spell_save_dc_mod": "8 + mait + mod.INT",
         "spell_attack_mod": "mait + mod.INT",
+        "spell_preparation_mod": "levelMage + mod.INT",
         "slots_table": { "0": "infinie", "1": 2 },
         "description": "Sorts connus et emplacements de mage niveau 1"
       }
@@ -122,9 +128,6 @@
         ]
       },
       "payload": {
-        "ability": "intelligence",
-        "spell_save_dc_mod": 0,
-        "spell_attack_mod": 0,
         "slots_table": { "1": 4, "2": 3, "3": 2 },
         "description": "Mise à jour des emplacements (mage niveau 5)"
       }
@@ -140,8 +143,7 @@
         ]
       },
       "payload": {
-        "feature_id": "mage_known_fireball_lv3",
-        "apply_immediately": true
+        "spell_id": "mage_known_fireball_lv3"
       }
     }
   ]

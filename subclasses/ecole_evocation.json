@@ -3,7 +3,7 @@
   "name": "École d'évocation",
   "description": "Vous maîtrisez la magie qui manipule les forces élémentaires brutes pour créer des effets spectaculaires.",
   "description_Longue": "Vous concentrez vos études sur la magie qui crée des effets élémentaires puissants telles qu'un froid glacial, une flamme brûlante, un roulement de tonnerre, une foudre qui crépite ou bien encore de l'acide brûlant. Certains évocateurs se font employer par les forces militaires, servant d'artillerie pour faire sauter les armées ennemies de loin. D'autres utilisent leurs pouvoirs spectaculaires pour protéger les faibles, tandis que d'autres servent leur propre intérêt comme des bandits, des aventuriers ou des tyrans en herbe.",
-  "class_id": "mage",
+  "classeId": "mage",
   "features": [
     {
       "id": "ecole-evocation_feature_level2",
@@ -11,7 +11,7 @@
       "source": "ecole_evocation",
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 2 }
+          { "kind": "level_gte", "classeId": "mage", "value": 2 }
         ]
       },
       "priority": 50,
@@ -25,7 +25,7 @@
       "source": "ecole_evocation",
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 6 }
+          { "kind": "level_gte", "classeId": "mage", "value": 6 }
         ]
       },
       "priority": 50,
@@ -39,7 +39,7 @@
       "source": "ecole_evocation",
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 10 }
+          { "kind": "level_gte", "classeId": "mage", "value": 10 }
         ]
       },
       "priority": 50,
@@ -53,7 +53,7 @@
       "source": "ecole_evocation",
       "conditions": {
         "all": [
-          { "kind": "level_gte", "class": "mage", "value": 14 }
+          { "kind": "level_gte", "classeId": "mage", "value": 14 }
         ]
       },
       "priority": 50,

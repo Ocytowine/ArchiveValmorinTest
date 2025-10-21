@@ -2,6 +2,12 @@
   "id": "guerrier",
   "name": "Guerrier",
   "description": "Combattant martial",
+  "ui_template": "guerrier.vue",
+  "multiclassing_requirements": {
+    "all": [
+      { "stat": "force", "min_value": 13 }
+    ]
+  },
   "features": [
     {
       "id": "guerrier-items",
