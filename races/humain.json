@@ -31,9 +31,7 @@
           "athletisme","acrobaties","arcanes","histoire","investigation",
           "perception","persuasion","intimidation","survie","medecine",
           "religion","discretion"
-        ],
-        "expertise": false,
-        "source_label": "Humain"
+        ]
       }
     }
   ]
