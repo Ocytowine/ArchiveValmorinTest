@@ -1,10 +1,11 @@
-export type Personnage = {
-  id: string // identifiant unique du personnage
+export type Personnage = {// Modèle de données pour un personnage //hydrater depuis la création du personnage et les évolutions en jeu.(les features s'appliquent sont stockées dans un autre objet)
+  id: string // Valeur_Base:Aléatoire //identifiant unique du personnage
   nom: {nomcomplet: string; prenom?: string; surnom?: string} // nom du personnage, prénom et surnom optionnel
-  age: number
-  sexe: string
-  taille: number
-  poids: number
+  age: number // Valeur_Base:Race // âge du personnage en années dans une fourchette imposée par la race (ageMini: number, ageMax: number)
+  sexe: string //Valeur_base:Choisie dans Race // homme, femme, autre
+  taille: number //Valeur_base:Race // Choisie dans une fourchette imposée par la race (TailleMini: number, TailleMax: number)
+  poids: number // Valeur_Base: Race // Choisie par le joueur dans l'onglet race et grace à une réglette poids=taille x  (Corpulence : 
+  vitesse: number // Valeur_Base:Race // Vitesse de déplacement en mètres
   langues: string
   alignement: string
   raceId: string
@@ -29,7 +30,7 @@ export type Personnage = {
     base: string; // // Valeur_Base:Race //ex: 10 + modDEX
     bonusArmure: string; // ex: armure portée
   }
-  vitesse: number // Valeur_Base:Race // Vitesse de déplacement en mètres
+
   nivFatigueActuel: number // Valeur_Base:Race // Niveau de fatigue actuel, chaque niveau a des effets spécifiques
   nivFatigueMax: number // Valeur_Base:Race // Niveau de fatigue maximum avant la mort
   initiative: string // modDEX + autres bonus/malus
@@ -46,30 +47,30 @@ export type Personnage = {
     charisme: { CHA: number; modCHA: number }// modCHA = Math.floor((CHA - 10) / 2)
   }
   competences: { // 1 si le personnage a la compétence, 0 sinon, si plusieurs fois la valeur est true alors on la compétence est expertisée (double le maitriseBonus)
-    Athlétisme: boolean,
-    Acrobaties: boolean,
-    Escamotage: boolean,
-    Discrétion: boolean,
-    Arcanes: boolean,
-    Histoire: boolean,
-    Investigation: boolean,
-    Nature: boolean,
-    Religion: boolean,
-    Dressage: boolean,
-    Intuition: boolean,
-    Médecine: boolean,
-    Perception: boolean,
-    Survie: boolean,
-    Tromperie: boolean,
-    Intimidation: boolean,
-    Performance: boolean,
-    Persuasion: boolean
-  }
+    Athlétisme: number,
+    Acrobaties: number,
+    Escamotage: number,
+    Discrétion: number,
+    Arcanes: number,
+    Histoire: number,
+    Investigation: number,
+    Nature: number,
+    Religion: number,
+    Dressage: number,
+    Intuition: number,
+    Médecine: number,
+    Perception: number,
+    Survie: number,
+    Tromperie: number,
+    Intimidation: number,
+    Performance: number,
+    Persuasion: number
+  }//Valeur_Base:Classe / Background
 
-  proficiencies: Record<string, ProficiencyRank>
-  savingThrows: string[]
-  inspiration: boolean
-  traits: string[]
+  proficiencies: Record<string, ProficiencyRank> //Valeur_Base:Classe/Background/race // Liste des maitrises (armes, armures, outils, etc. voir documents de référence)
+  savingThrows: string[] //Valeur_Base:Classe // Liste des caracs pour lesquelles le personnage est compétent aux jets de sauvegarde
+  inspiration: boolean //Valeur_Base:false // Indique si le personnage a de l'inspiration (avantage sur un jet)
+  traits: string[]//Valeur_Base:Background/race // Liste des traits raciaux et de background
 
 
 // Gestion des features appliquées au personnage :
@@ -80,11 +81,8 @@ export type Personnage = {
 // Lors de l'application des effets en jeu, on parcourt cette structure pour appliquer les effets de chaque feature et de ses enfants
 // Une feature peut être ajoutée ou retirée dynamiquement (ex: gain/perte de don, changement de classe, etc.) en mettant à jour cette structure.
   featureIdsApply: Record<string, string[]>
+  featureAddModifiers: Record<string, Record<string, any>> // Permet de stocker des modificateurs spécifiques appliqués par des features (ex: bonus de caractéristique, résistance, etc.) issu des features appliquées (featureIdsApply)
 
-
-  spellIds?: string[]
-  spellcastingSpec?: SpellcastingSpec | null
-  statBases?: StatBase | null
 
   // Gestion de l'équipement, Inventaire, poids, or, contenant etc.
   //Logique de jeu : le joueur intéragit avec son équipement via l'UI inventaire. Dans l'ui nous retrouvons des données : capacité avant malus, capacité maximal, poids transporté actuel,
@@ -95,9 +93,11 @@ export type Personnage = {
   // Le poids total transporté est calculé en fonction de l'inventaire complet (items équipés et non équipés)
   // Le poids maximum transportable est géré via statBases (ex: force * 15 kg)
   // L'or total est géré via l'inventaire (items de type or, pièces d'or, etc.)
+  // Les changement fait dans l'inventaire sont soumiss à validation par le MJ (IA via un système de demande de validation) avant d'être appliqués au personnage.
+
   materielSlots: {// Slots pour mettres des équipements (items) à disposition direct (aucun malus d'action pour les utiliser)
     Ceinture_gauche: string | null // limité au items étant d'une longueur inferieure à la moitié de la taille du personnage
-
+// création d'un module de filtrage des items en fonction des slots disponibles et des caractéristiques du personnage (taille, force, etc.) pour n'afficher que les items compatibles lors de l'équipement. (liste déroulante filtrée)
     Ceinture_droite: string | null // limité au items étant d'une longueur inferieure à la moitié de la taille du personnage
 
     Dos_gauche: string | null // limité au items étant d'une longueur inferieure à la taille du personnage
@@ -111,11 +111,24 @@ export type Personnage = {
     paquetage: string | null // sac à dos, besace, etc.
 
     accessoire: string | null // Montre, amulette, bague, etc. limite de 5
-
-
-    equippedIds: string[]
-    
   }
+  armesDefaut:
+  {// Systeme permettant de définir les armes par défaut du personnage (ex: arme de mêlée principale, arme de mêlée secondaire, arme à distance), à la condition d'être présent dans les slots d'équipement (materielSlots)
+    main_droite: string | null // idUnique de l'arme équipée en main droite //Filtre les armes compatibles via leur propriété (ex: arme légère, arme de jet, etc.)
+    main_gauche: string | null // idUnique de l'arme équipée en main gauche //Filtre les armes compatibles via leur propriété (ex: arme légère, arme de jet, etc.)
+    mains: string | null // idUnique de l'arme équipée à deux mains //Filtre les armes compatibles via leur propriété (ex: arme à deux mains, etc.)
+  } //Ont applique les features des items de armesDefaut (calcul du CA avec bouclier, bonus de dégâts, etc.)
+    Inventaire: 
+    {
+      id: string, //identifiant de l'item issu de la base de données des items
+      idUnique:string, // identifiant unique pour chaque instance de l'item (permet de gérer les items consommables, usables, etc.)
+      quantite: number,  // quantité de cet item dans l'inventaire
+      mod:{String:string} | null, //modificateurs appliqués à cet item, peut-s'agir de la description visuelle, de bonus de caractéristique, d'une libertée du MJ (en somme appelle la propriété de l'arme, la remplace par une autre valeur).
+      conteneur:string | null // spécifie dans quel contenant se trouve l'item (sac, coffre, etc.), null si l'item est porté sur soi
+    } // liste des items dans l'inventaire avec leur quantité et un id unique pour chaque instance (permet de gérer les items consommables, usables, etc.)
+
+    
+  
   descriptionPersonnage: {
     bio: string
     physique: string
@@ -124,18 +137,37 @@ export type Personnage = {
     relations: string
     defauts: string
   }
-  ui_template?: string | null
+ uiClasse:
+ {
+  ui_template1: string // template d'affichage personnalisé (lié à la classe1 choisie) permet de charger le template de /public/templates/template_classe1.vue
+  ui_template2: string | null // template d'affichage personnalisé (lié à la classe2 choisie ou rien)
 }
 
-type SpellcastingSpec = {
+SpellcastingSpec : {
   ability: string | null // carac associée aux jets de sort
   spellSaveDc: number | null
   spellAttackMod: number | null
   slots: Record<string, number | string>
   focusId: string | null
+  type SpellMemory =
+  | {
+      type: "grimoire";
+      grimoires: Array<{
+        nom: string;
+        sorts: string[];
+      }>;
+    }
+  | {
+      type: "memoire";
+      capacite: number;      // nb de sorts mémorisables
+      sortsMemorises: string[];
+    }
+  | {
+      type: "preparation";
+      capaciteParJour: number;
+      sortsPrepares: string[];
+    };// Fonctionnement de la mémoire des sorts (ex: nombre de sorts préparés par niveau)
+
   description?: string | null
-}
-
-
-
-
+    spellIds?: string[]
+}}
