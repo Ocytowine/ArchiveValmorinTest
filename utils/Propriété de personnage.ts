@@ -6,11 +6,11 @@ export type Personnage = {// Modèle de données pour un personnage //hydrater d
   taille: number //Valeur_base:Race // Choisie dans une fourchette imposée par la race (TailleMini: number, TailleMax: number)
   poids: number // Valeur_Base: Race // Choisie par le joueur dans l'onglet race et grace à une réglette poids=taille x  (Corpulence : 
   vitesse: number // Valeur_Base:Race // Vitesse de déplacement en mètres
-  langues: string
-  alignement: string
-  raceId: string
-  backgroundId: string
-  niveauGlobal: number
+  langues: string // Valeur_Base:Race/Background // Liste des langues connues par le personnage
+  alignement: string // Valeur_Base:Choisie dans Background //ex: Loyal Bon, Neutre Mauvais, etc.
+  raceId: string // Valeur_Base:Choisie // identifiant de la race
+  backgroundId: string // Valeur_Base:Choisie // identifiant du background
+  niveauGlobal: number // Valeur_Base:Choisie (choisir jusqu'à niveau3) // Niveau global du personnage, évolue avec l'expérience (palier et logique xp définie ailleurs)
   classe: {
     1: { classeId: string; subclasseId: string; niveau: number } // classe principale
     2?: { classeId: string; subclasseId: string; niveau: number } // classe secondaire
